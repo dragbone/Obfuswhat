@@ -6,15 +6,14 @@ public class _ {
 	}
 
 	_() throws Exception {
-		﹏(((Class<?>) ﹏(Class.class, 0, "java.lang.System")).getFields()[_1].get(null), _3, "Hello World.");
+		﹏(((Class<?>) ﹏(Class.class, _0, ︴(︴(this, _7), _9).getName().subSequence(_0, _8 | _2) + "System")).getFields()[_1].get(null), _3, "Hello World.");
 	}
 
-	Object ﹏(Object o, int i, Object... s) throws Exception {
-		return o.getClass().getMethods()[i].invoke(o, s);
+	Class<?> ︴(Object ⁀, int ‿) throws Exception {
+		return (Class<?>) ﹏(⁀, ‿);
 	}
 
-	public static void p(Object[] os) {
-		for (int i = 0; i < os.length; ++i)
-			System.out.println(os[i]);
+	Object ﹏(Object ‿, int ⁀, Object... ৲) throws Exception {
+		return ‿.getClass().getMethods()[⁀].invoke(‿, ৲);
 	}
 }
