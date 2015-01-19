@@ -9,7 +9,7 @@ public class $ {
 	public $() {
 		//printMethods((Object)Object.class);
 		Class<?> obj = Object.class;
-		printMethodsDirect(obj.getClass());
+		printMethodsDirect(String.class);
 		//System.out.println(obj.getClass().getMethods());
 	}
 

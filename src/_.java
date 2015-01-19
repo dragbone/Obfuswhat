@@ -13,7 +13,13 @@ public class _ {
 		Object st = subSeq(call(getMethod(obj, 4), 5), 4, 6);
 		Object em = subSeq(call(getMethod(obj, 60), 5), 3, 5);
 		Object javalang = subSeq(getName(obj), _0, _8 | _2);
-		call(((Class<?>) call(Class.class, _0, "" + javalang + sy + st + em)).getFields()[_1].get(null), _3, "Hello World.");
+		Object javaLangSystem = concat(concat(concat(javalang, sy), st), em);
+		call(((Class<?>) call(Class.class, _0, javaLangSystem)).getFields()[_1].get(null), _3, "Hello World");
+	}
+
+	Object concat(Object o1, Object o2) throws Exception {
+		Object someString = call(getMethod(o1, 2), 5);
+		return call(someString, 32, "%1$s%2$s", new Object[] { o1, o2 });
 	}
 
 	Object getName(Object obj) throws Exception {
@@ -29,6 +35,7 @@ public class _ {
 	}
 
 	Method getMethod(Object ⁀, int ‿) {
+		//System.out.println("Accessing: " + ⁀.getClass() + " (" + ⁀.getClass().getMethods().length + ")[" + ‿ + "]");
 		return ⁀.getClass().getMethods()[‿];
 	}
 
