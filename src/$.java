@@ -1,3 +1,5 @@
+import java.lang.reflect.Method;
+
 public class $ {
 	public static void main(String[] args) {
 		printIndetifierStart();
@@ -5,9 +7,10 @@ public class $ {
 	}
 
 	public $() {
-		printMethods(this);
-		System.out.println(this.getClass().getSuperclass().getName());
-		System.out.println(this.getClass().getSuperclass().getName().subSequence(0, 8 | 2));
+		//printMethods((Object)Object.class);
+		Class<?> obj = Object.class;
+		printMethodsDirect(obj.getClass());
+		//System.out.println(obj.getClass().getMethods());
 	}
 
 	public static void printIndetifierStart() {
@@ -22,6 +25,10 @@ public class $ {
 			System.out.println(i + ": " + os[i]);
 	}
 
+	public static void printMethodsDirect(Class<?> c) {
+		printArray(c.getMethods());
+	}
+	
 	public static void printMethods(Object o) {
 		printMethods(o.getClass());
 	}
