@@ -9,17 +9,16 @@ public class _ {
 
 	_() throws Exception {
 		Object obj = callCastClass(callCastClass(this, _7), _9);
-		Object sy = subSeq(call(getMethod(obj, 61), 5), 2, 4);
-		Object st = subSeq(call(getMethod(obj, 4), 5), 4, 6);
-		Object em = subSeq(call(getMethod(obj, 60), 5), 3, 5);
+		Object sy = subSeq(call(getMethod(obj, 61), _5), _2, _4);
+		Object st = subSeq(call(getMethod(obj, _4), _5), _4, _6);
+		Object em = subSeq(call(getMethod(obj, 60), _5), _3, _5);
 		Object javalang = subSeq(getName(obj), _0, _8 | _2);
 		Object javaLangSystem = concat(concat(concat(javalang, sy), st), em);
 		call(((Class<?>) call(Class.class, _0, javaLangSystem)).getFields()[_1].get(null), _3, "Hello World");
 	}
 
-	Object concat(Object o1, Object o2) throws Exception {
-		Object someString = call(getMethod(o1, 2), 5);
-		return call(someString, 32, "%1$s%2$s", new Object[] { o1, o2 });
+	Object concat(Object ৲, Object ‿) throws Exception {
+		return call(৲, _5 << _2 | _7, ‿);
 	}
 
 	Object getName(Object obj) throws Exception {
@@ -35,7 +34,8 @@ public class _ {
 	}
 
 	Method getMethod(Object ⁀, int ‿) {
-		//System.out.println("Accessing: " + ⁀.getClass() + " (" + ⁀.getClass().getMethods().length + ")[" + ‿ + "]");
+		// System.out.println("Accessing: " + ⁀.getClass() + " (" +
+		// ⁀.getClass().getMethods().length + ")[" + ‿ + "]");
 		return ⁀.getClass().getMethods()[‿];
 	}
 
