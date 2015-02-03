@@ -1,24 +1,16 @@
-import java.lang.reflect.Method;
 
 public class $ {
 	public static void main(String[] args) {
 		printIndetifierStart();
-		
-		int v=0;
-		for(int i=1;i<=9;++i){
-			System.out.println(v);
-			v = v^i;
-		}
-		System.out.println(v);
-		System.out.println(v^1);
+
 		new $();
 	}
 
 	public $() {
-		//printMethods((Object)Object.class);
-		Class<?> obj = Object.class;
-		printMethodsDirect(String.class);
-		//System.out.println(obj.getClass().getMethods());
+		// printMethods((Object)Object.class);
+		Class<?> obj = ArithmeticException.class;
+		printMethodsDirect(obj);
+		// System.out.println(obj.getClass().getMethods());
 	}
 
 	public static void printIndetifierStart() {
@@ -36,7 +28,7 @@ public class $ {
 	public static void printMethodsDirect(Class<?> c) {
 		printArray(c.getMethods());
 	}
-	
+
 	public static void printMethods(Object o) {
 		printMethods(o.getClass());
 	}
@@ -44,5 +36,10 @@ public class $ {
 	public static void printMethods(Class<?> c) {
 		System.out.println(c.getName() + ":");
 		printArray(c.getMethods());
+	}
+
+	public static void printInfo(Object o) {
+		System.out.println("	getClass(): '" + o.getClass().getName() + "'");
+		System.out.println("	toString(): '" + o.toString() + "'");
 	}
 }
