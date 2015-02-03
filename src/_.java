@@ -88,9 +88,7 @@ public class _ {
 	 * @throws Exception
 	 */
 	Object call(Object ‿, int ⁀, Object... ৲) throws Exception {
-		௹: {
-			break ௹;
-		} // TURBAN SMILEYS!
+		௹: {break ௹;} // TURBAN SMILEYS!
 		return getMethod(‿, ⁀).invoke(‿, ৲);
 	}
 }
