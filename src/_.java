@@ -1,8 +1,11 @@
 import java.lang.reflect.Method;
 
 public class _ {
-	_[] _ = {this};
-	
+	// valid identifiers: $ _ ¢ £ ¤ ¥ ֏ ؋ ৲ ৳ ৻ ૱ ௹ ฿ ៛ ‿ ⁀ ⁔ ₠ ₡ ₢ ₣ ₤ ₥ ₦ ₧ ₨
+	// ₩ ₪ ₫ € ₭ ₮ ₯ ₰ ₱ ₲ ₳ ₴ ₵ ₶ ₷ ₸ ₹ ₺ ꠸ ﷼ ︳ ︴ ﹍ ﹎ ﹏ ﹩ ＄ ＿ ￠ ￡ ￥ ￦
+	// side note: there are three dollar symbols (o.O)
+	_[] _ = { this };
+
 	int ︳ = _.length,
 			︳︳ = ︳ << ︳,
 			︳︳︳ = ︳ | ︳︳,
@@ -26,9 +29,9 @@ public class _ {
 		Object javalang = subSeq(getName(obj), ︳︳︳︳︳︳︳︳︳︳, ︳︳︳︳︳︳︳︳ | ︳︳);
 		Object javaLangSystem = concat(concat(concat(javalang, sy), st), em);
 
-		Object hello = "Hello";
+		Object hello = "h".toUpperCase() + "ello";
 		Object space = subSeq(call(call(trycall(call(this, ︳︳︳︳︳︳), 32, ︳, ︳︳︳︳︳︳︳︳︳︳), 0), 9), 1, 2);
-		Object world = "World";
+		Object world = "w".toUpperCase() + "orld";
 		call(((Class<?>) call(Class.class, ︳︳︳︳︳︳︳︳︳︳, javaLangSystem)).getFields()[︳].get(null), ︳︳︳, concat(concat(hello, space), world));
 	}
 
@@ -46,9 +49,13 @@ public class _ {
 
 	Object trycall(Object ‿, int ⁀, Object... ৲) {
 		try {
-			return call(‿, ⁀, ৲);
-		} catch (Exception _) {
-			return _;
+			‿ = call(‿, ⁀, ৲);
+			return ‿;
+		} catch (Exception __) {
+			‿ = __;
+			return ‿;
+		} finally {
+			‿ = null;
 		}
 	}
 
@@ -88,7 +95,7 @@ public class _ {
 	 * @throws Exception
 	 */
 	Object call(Object ‿, int ⁀, Object... ৲) throws Exception {
-		௹: {break ௹;} // TURBAN SMILEYS!
+		௹: { break ௹; } // TURBAN SMILEYS!
 		return getMethod(‿, ⁀).invoke(‿, ৲);
 	}
 }
