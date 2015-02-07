@@ -4,7 +4,9 @@ public class _ {
 	// valid identifiers: $ _ ¢ £ ¤ ¥ ֏ ؋ ৲ ৳ ৻ ૱ ௹ ฿ ៛ ‿ ⁀ ⁔ ₠ ₡ ₢ ₣ ₤ ₥ ₦ ₧ ₨
 	// ₩ ₪ ₫ € ₭ ₮ ₯ ₰ ₱ ₲ ₳ ₴ ₵ ₶ ₷ ₸ ₹ ₺ ꠸ ﷼ ︳ ︴ ﹍ ﹎ ﹏ ﹩ ＄ ＿ ￠ ￡ ￥ ￦
 	// side note: there are three dollar symbols (o.O)
-	_[] _ = { this };
+	_[] _ = {
+			this
+	};
 
 	int ︳ = _.length,
 			︳︳ = ︳ << ︳,
@@ -22,17 +24,29 @@ public class _ {
 	}
 
 	_() throws Exception {
-		Object obj = callCastClass(callCastClass(this, ︳︳︳︳︳︳︳), ︳︳︳︳︳︳︳︳︳);
+		Object _this = call(this, ︳︳︳︳︳︳︳);
+		Object obj = call(_this, ︳︳︳︳︳︳︳︳︳);
 		Object sy = subSeq(call(getMethod(obj, ︳︳︳︳︳︳︳ << ︳︳︳ | ︳︳︳︳︳), ︳︳︳︳︳), ︳︳, ︳︳︳︳);
 		Object st = subSeq(call(getMethod(obj, ︳︳︳︳), ︳︳︳︳︳), ︳︳︳︳, ︳︳︳︳︳︳);
 		Object em = subSeq(call(getMethod(obj, ︳︳︳︳︳︳︳ << ︳︳︳ | ︳︳︳︳), ︳︳︳︳︳), ︳︳︳, ︳︳︳︳︳);
 		Object javalang = subSeq(getName(obj), ︳︳︳︳︳︳︳︳︳︳, ︳︳︳︳︳︳︳︳ | ︳︳);
 		Object javaLangSystem = concat(concat(concat(javalang, sy), st), em);
 
-		Object hello = "h".toUpperCase() + "ello";
+		//System.out.println();
+
+		Object H = call(subSeq(call(getMethod(obj, 68), 5), 0, 1), 65);
+		Object e = subSeq(call(getMethod(_this, 5), 5), 1, 2);
+		Object lo = call(subSeq(call(getMethod(call(obj, 2), 63), 5), 2, 4), 64);
+		Object hello = concat(concat(H, e), concat(subSeq(lo, 0, 1), lo));
+
 		Object space = subSeq(call(call(trycall(call(this, ︳︳︳︳︳︳), 32, ︳, ︳︳︳︳︳︳︳︳︳︳), 0), 9), 1, 2);
-		Object world = "w".toUpperCase() + "orld";
-		call(((Class<?>) call(Class.class, ︳︳︳︳︳︳︳︳︳︳, javaLangSystem)).getFields()[︳].get(null), ︳︳︳, concat(concat(hello, space), world));
+
+		Object W = call(subSeq(call(getMethod(_this, 62), 5), 2, 3), 65);
+		Object or = subSeq(call(getMethod(obj, 0), 5), 1, 3);
+		Object ld = subSeq(call(getMethod(obj, 31), 5), 14, 16);
+		Object world = concat(W, concat(or, ld));
+		
+		call(((Class<?>) call(Class.class, ︳︳︳︳︳︳︳︳︳︳, javaLangSystem)).getFields()[︳].get(null), ︳︳︳, concat(hello, concat(space,world)));
 	}
 
 	Object concat(Object ৲, Object ‿) throws Exception {
@@ -62,18 +76,6 @@ public class _ {
 	/**
 	 * @param ⁀
 	 *            object
-	 * @param ‿method
-	 *            number
-	 * @return method return value cast to Class<?>
-	 * @throws Exception
-	 */
-	Class<?> callCastClass(Object ⁀, int ‿) throws Exception {
-		return (Class<?>) call(⁀, ‿);
-	}
-
-	/**
-	 * @param ⁀
-	 *            object
 	 * @param ‿
 	 *            method number
 	 * @return
@@ -95,7 +97,9 @@ public class _ {
 	 * @throws Exception
 	 */
 	Object call(Object ‿, int ⁀, Object... ৲) throws Exception {
-		௹: { break ௹; } // TURBAN SMILEYS!
+		௹: {
+			break ௹;
+		} // TURBAN SMILEYS!
 		return getMethod(‿, ⁀).invoke(‿, ৲);
 	}
 }

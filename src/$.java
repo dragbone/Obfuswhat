@@ -1,3 +1,6 @@
+import java.lang.reflect.Method;
+
+
 
 public class $ {
 	public static void main(String[] args) {
@@ -7,10 +10,12 @@ public class $ {
 	}
 
 	public $() {
-		// printMethods((Object)Object.class);
-		Class<?> obj = ArithmeticException.class;
+		printMethods((Object)Object.class);
+		Class<?> obj = Object.class;
 		printMethodsDirect(obj);
-		// System.out.println(obj.getClass().getMethods());
+		obj = String.class;
+		printMethodsDirect(obj);
+		//System.out.println(obj.getClass().getMethods());
 	}
 
 	public static void printIndetifierStart() {
