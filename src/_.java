@@ -1,5 +1,4 @@
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
+import java.lang.reflect.*;
 
 public class _ {
 	_[] _ = {
@@ -68,7 +67,7 @@ public class _ {
 	}
 
 	\u004D\u0065\u0074\u0068\u006f\u0064 ﹍(Object ⁀, int ‿) {
-		௹:{
+		௹: {
 			break ௹;
 		} // TURBAN SMILEYS!
 		return ⁀.get\u0043\u006c\u0061\u0073\u0073().get\u004D\u0065\u0074\u0068\u006f\u0064\u0073()[‿];
