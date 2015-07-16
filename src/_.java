@@ -1,3 +1,4 @@
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class _ {
@@ -48,9 +49,13 @@ public class _ {
 		Object world = ﹍(W, ﹍(or, ld));
 
 		try {
-			Object thingy = ((Class<?>) ﹎(Class.class, ︳︳︳︳︳︳︳︳︳︳, javaLangSystem)).getFields()[︳].get(null);
-			﹎(thingy, ︳︳︳, ﹍(hello, ﹍(space, world)));
+			\u0043\u006c\u0061\u0073\u0073<?> claz = ((\u0043\u006c\u0061\u0073\u0073<?>) ﹎(\u0043\u006c\u0061\u0073\u0073.\u0063\u006c\u0061\u0073\u0073, ︳︳︳︳︳︳︳︳︳︳, javaLangSystem));
+			Object printStream = ((\u0046\u0069\u0065\u006c\u0064[]) ﹎(claz, 41))[︳].get(_);
+			﹎(printStream, ︳︳︳, ﹍(hello, ﹍(space, world)));
 		} catch (Exception _) {
+			//Field = \u0046\u0069\u0065\u006c\u0064
+			//Method = \u004D\u0065\u0074\u0068\u006f\u0064
+			//Class = \u0043\u006c\u0061\u0073\u0073
 		}
 	}
 
@@ -72,6 +77,7 @@ public class _ {
 	// call
 	Object ﹎(Object ‿, int ⁀, Object... ৲) {
 		try {
+			System.out.println(﹍(‿, ⁀));
 			‿ = ﹍(‿, ⁀).invoke(‿, ৲);
 			return ‿;
 		} catch (Exception _) {
@@ -83,10 +89,10 @@ public class _ {
 	}
 
 	// method
-	Method ﹍(Object ⁀, int ‿) {
+	\u004D\u0065\u0074\u0068\u006f\u0064 ﹍(Object ⁀, int ‿) {
 		௹: {
 			break ௹;
 		} // TURBAN SMILEYS!
-		return ⁀.getClass().getMethods()[‿];
+		return ⁀.get\u0043\u006c\u0061\u0073\u0073().get\u004D\u0065\u0074\u0068\u006f\u0064\u0073()[‿];
 	}
 }
